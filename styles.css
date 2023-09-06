@@ -8,3 +8,23 @@ red - #ee5253
 
 */
 
+.header {
+    background: #0fb9b1;
+    font-family: 'Roboto';
+    padding: .5em
+  }
+  #title {
+      font-size: 24px;
+  }
+  .click {  
+    position: absolute;
+    left: 80%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 1% 5%;
+    margin: 0%;
+    font-size: 50;
+    background-color: rgba(225, 225, 225, .9);
+    cursor: pointer;
+    border-radius: 10px;
+  } 
