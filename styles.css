@@ -11,20 +11,62 @@ red - #ee5253
 .header {
     background: #0fb9b1;
     font-family: 'Roboto';
-    padding: .5em
+    padding: 1em
   }
+  
   #title {
       font-size: 24px;
   }
+
   .click {  
     position: absolute;
     left: 80%;
     transform: translateX(-50%);
     text-align: center;
-    padding: 1% 5%;
+    padding: 1% 1%;
     margin: 0%;
-    font-size: 50;
+    font-size: 10;
     background-color: rgba(225, 225, 225, .9);
     cursor: pointer;
     border-radius: 10px;
   } 
+
+  body {
+    background-image: url('assets/burger-friends.jpg');
+    background-position: center;
+    background-size: 1450px;
+  } 
+
+  #box1 {
+    margin: 75;
+    float: left; 
+    width: 25%; /* Given a little less than 50% to prevent any rendering quirks or to allow a small gap between boxes */
+    padding: 80px; /* Just for presentation purposes */
+    border: 1px solid black; /* Just for presentation purposes */
+    font-family: 'Roboto';
+    height: 200px;
+    background-color: rgba(225, 225, 225, .9);
+  }
+
+  #box2 {
+    margin: 75;
+    float: right;
+    width: 25%; /* Given a little less than 50% to prevent any rendering quirks or to allow a small gap between boxes */
+    padding: 80px; /* Just for presentation purposes */
+    border: 1px solid black; /* Just for presentation purposes */
+    font-family: 'Roboto';
+    height: 200px;
+    background-color: rgba(225, 225, 225, .9);
+  }
+
+  label {
+    font:
+      1rem 'Roboto', sans-serif;
+  }
+  
+  input {
+    margin: .3rem;
+  }
+
+  
+  
