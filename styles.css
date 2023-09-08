@@ -11,7 +11,7 @@ red - #ee5253
 .header {
     background: #0fb9b1;
     font-family: 'Roboto';
-    padding: 1em
+    padding: 1em;
   }
   
   #title {
@@ -64,8 +64,9 @@ red - #ee5253
       1rem 'Roboto', sans-serif;
   }
   
-  input {
-    margin: .3rem;
+
+  input[type="radio"]{
+    margin: 10 20px 0 0px;
   }
 
   
