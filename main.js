@@ -49,4 +49,32 @@ var dessert = [
 ];
 
 //DOM elements
-var letsCook = document.querySelector('.lets-cook');
+var letsCookButton = document.querySelector('.lets-cook');
+var randomSidesButton = document.querySelector('#side');
+var randomDessertButton = document.querySelector('#mainDish');
+var randomMainsButton = document.querySelector('#dessert');
+
+//Event listeners
+letsCookButton.addEventListener("click",randomDish);
+randomSides.addEventListener("click",randomSideFun);
+randomDessert.addEventListener("click",randomDessertFun);
+randomMains.addEventListener("click",randomMainFun);
+
+//Functions
+
+function randomSideFun() {
+    var randomSide = sides[Math.floor(Math.random() * sides.length)];
+    sideElement.innerHTML = randomSide;
+  }
+
+  function randomDessertFun() {
+    var randomDessert = dessert[Math.floor(Math.random() * dessert.length)];
+    sideElement.innerHTML = randomDessert;
+}
+  function randomMainFun() {
+    var randomMains = mains[Math.floor(Math.random() * mains.length)];
+    sideElement.innerHTML = randomMains;
+}
+
+  
+  
