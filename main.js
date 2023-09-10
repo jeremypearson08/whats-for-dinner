@@ -89,8 +89,9 @@ function randomEntireMealFun() {
     var randomMain = randomMealFun(mains);
     var randomDessert = randomMealFun(dessert);
 
-    sideElement.innerHTML = `${randomMain} with a side of ${randomSide} and ${randomDessert} for dessert.`;
+    sideElement.innerHTML = `<i>You should make:</i><br><br>${randomMain} with a side of ${randomSide} and ${randomDessert} for dessert.`;
 }
+
 
 function hideCookPot () {    
     if (sideElement.style.display === "none") {
