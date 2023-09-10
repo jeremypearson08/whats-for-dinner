@@ -31,6 +31,18 @@ red - #ee5253
     border-radius: 10px;
   } 
 
+  .lets-cook {  
+    position: absolute;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 1% 5%;
+    margin: 3%;
+    font-size: 14;
+    background-color: #0fb9b1;
+    cursor: pointer;
+    border-radius: 10px;
+  } 
+
   body {
     background-image: url('assets/burger-friends.jpg');
     background-position: center;
