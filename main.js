@@ -53,30 +53,43 @@ var letsCookButton = document.querySelector('.lets-cook');
 var randomSidesButton = document.querySelector('#side');
 var randomDessertButton = document.querySelector('#dessert');
 var randomMainsButton = document.querySelector('#mainDish');
+var randomEntireMealButton = document.querySelector('#entireMeal');
 var sideElement = document.querySelector('.dish-display');
-var cookPot = document.getElementById('#cookPotImage');
+var cookPot = document.getElementById('cookPotImage');
 
 //Event listeners
-//letsCookButton.addEventListener("click",randomDish);
 randomSidesButton.addEventListener("click",randomSideFun);
 randomDessertButton.addEventListener("click",randomDessertFun);
 randomMainsButton.addEventListener("click",randomMainFun);
+randomEntireMealButton.addEventListener("click",randomEntireMealFun);
 letsCookButton.addEventListener("click", hideCookPot);
 
 //Functions
-
 function randomSideFun() {
     var randomSide = sides[Math.floor(Math.random() * sides.length)];
     sideElement.innerHTML = randomSide;
   }
 
-  function randomDessertFun() {
+function randomDessertFun() {
     var randomDessert = dessert[Math.floor(Math.random() * dessert.length)];
     sideElement.innerHTML = randomDessert;
 }
-  function randomMainFun() {
+
+function randomMainFun() {
     var randomMains = mains[Math.floor(Math.random() * mains.length)];
     sideElement.innerHTML = randomMains;
+}
+
+function randomMealFun(array) {
+    return array[Math.floor(Math.random() * array.length)];
+}
+
+function randomEntireMealFun() {
+    var randomSide = randomMealFun(sides);
+    var randomMain = randomMealFun(mains);
+    var randomDessert = randomMealFun(dessert);
+
+    sideElement.innerHTML = `${randomMain} with a side of ${randomSide} and ${randomDessert} for dessert.`;
 }
 
 function hideCookPot () {    
