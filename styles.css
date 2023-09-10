@@ -52,9 +52,8 @@ red - #ee5253
   #box1 {
     margin: 75;
     float: left; 
-    width: 25%; /* Given a little less than 50% to prevent any rendering quirks or to allow a small gap between boxes */
-    padding: 80px; /* Just for presentation purposes */
-    border: 1px solid black; /* Just for presentation purposes */
+    width: 25%; 
+    padding: 80px; 
     font-family: 'Roboto';
     height: 200px;
     background-color: rgba(225, 225, 225, .9);
@@ -63,9 +62,8 @@ red - #ee5253
   #box2 {
     margin: 75;
     float: right;
-    width: 25%; /* Given a little less than 50% to prevent any rendering quirks or to allow a small gap between boxes */
-    padding: 80px; /* Just for presentation purposes */
-    border: 1px solid black; /* Just for presentation purposes */
+    width: 25%;
+    padding: 80px;
     font-family: 'Roboto';
     height: 200px;
     background-color: rgba(225, 225, 225, .9);
