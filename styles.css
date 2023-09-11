@@ -12,6 +12,8 @@ red - #ee5253
     background: #0fb9b1;
     font-family: 'Roboto';
     padding: 1em;
+    height: 7vh;
+    margin: 0%
   }
   
   #title {
@@ -46,7 +48,7 @@ red - #ee5253
   body {
     background-image: url('assets/burger-friends.jpg');
     background-position: center;
-    background-size: 1450px;
+    background-size: cover;
   } 
 
   #box1 {
@@ -83,6 +85,7 @@ red - #ee5253
     font-family: 'Roboto';
     font-size: 20px;
     text-align: center;
+    margin: 0;
   }
 
   
