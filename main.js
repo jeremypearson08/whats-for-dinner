@@ -67,17 +67,17 @@ letsCookButton.addEventListener("click", hideCookPot);
 //Functions
 function randomSideFun() {
     var randomSide = sides[Math.floor(Math.random() * sides.length)];
-    sideElement.innerHTML = randomSide;
+    sideElement.innerHTML = `<i>You should make:</i><br><br>` + randomSide + `!`;
   }
 
 function randomDessertFun() {
     var randomDessert = dessert[Math.floor(Math.random() * dessert.length)];
-    sideElement.innerHTML = randomDessert;
+    sideElement.innerHTML = `<i>You should make:</i><br><br>` + randomDessert + `!`;
 }
 
 function randomMainFun() {
     var randomMains = mains[Math.floor(Math.random() * mains.length)];
-    sideElement.innerHTML = randomMains;
+    sideElement.innerHTML = `<i>You should make:</i><br><br>` + randomMains + `!`;
 }
 
 function randomMealFun(array) {
